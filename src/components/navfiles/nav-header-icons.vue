@@ -29,6 +29,12 @@
           <fa class="icons" :icon="['fas', 'shopping-cart']" />
         </router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="/Products">
+          PRODUCTS
+          <fa class="icons" :icon="['fas', 'shopping-basket']" />
+        </router-link>
+      </li>
       <li class="nav-item" v-if="isLoggedIn">
         <router-link to="/Login" @click.prevent="logoutUser">
           Log out

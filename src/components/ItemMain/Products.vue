@@ -15,7 +15,7 @@
         </div>
         <div class="product_price">
           <span>Rs.</span>
-          {{ product.price }}
+          {{ product.price }} /kg
         </div>
         <div class="product_button">
           <button class="btn btn-cart" @click="addToCart(product)">
@@ -101,5 +101,6 @@ button {
 button:hover {
   font-size: 16px;
   background: #b0b435;
+  transition: ease-in-out 100ms;
 }
 </style>
