@@ -60,7 +60,8 @@ SearchInput
   display: flex;
   align-items: center;
   max-width: 100%;
-  margin: 0 auto;
+  margin: -6px auto;
+  margin-top: 9px;
 
   /* box-shadow: 0 0 2px 3px rgb(226, 223, 223);*/
   flex-wrap: wrap;

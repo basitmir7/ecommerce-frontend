@@ -64,5 +64,7 @@ export default {
 }
 .slide-main:hover {
   opacity: 0.9;
+  transform: scale(1.1);
+  transition: ease-in-out 200ms;
 }
 </style>

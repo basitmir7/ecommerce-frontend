@@ -57,11 +57,12 @@
       <div class="totalQuantity">
         QUANTITY = <b>{{ getQuantities }}</b>
       </div>
-      <button class="check-btn">Proceed to checkout</button>
+      <button class="check-btn">PROCEED TO CHECKOUT</button>
     </div>
   </div>
   <div v-else>
-    <div class="cartContainer">your cart is empty</div>
+    <div class="cartContainer">YOUR CART IS EMPTY</div>
+    <div class="empty-img"><img src="../assets/a1.png" /></div>
   </div>
 </template>
 <script>
@@ -111,12 +112,13 @@ h3 {
 .col-9 {
   display: block;
 
-  box-shadow: 3px 4px 2px rgb(226, 223, 223);
+  box-shadow: 0 0 20px 0 rgba(56, 55, 55, 0.2),
+    0 5px 5px 0 rgba(66, 65, 65, 0.24);
   width: 98%;
   padding: 6px;
-  margin-top: 10px;
-  border-radius: 15px;
-  background: linear-gradient(180deg, #dadba6, rgb(223, 228, 204));
+  margin-top: 15px;
+
+  background: linear-gradient(180deg, #ffffe8, rgb(252, 255, 240));
 }
 
 .col-2 {
@@ -148,6 +150,7 @@ h3 {
   background: rgb(255, 255, 255);
   box-shadow: 1px rgb(158, 157, 157);
   border: 0.5px solid rgb(172, 172, 172);
+  cursor: pointer;
 }
 .select {
   font-size: 13px;
@@ -184,17 +187,20 @@ h3 {
 }
 .check-btn {
   margin-top: 20px;
-  border: 2px solid rgb(176, 179, 175);
-  background: #b0b43d;
-  color: black;
-  border-radius: 3px;
+  border: 1px solid rgb(176, 179, 175);
+  background: #080808;
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
   cursor: pointer;
   outline: none;
   font-size: 18px;
   padding: 6px 13px;
 }
 .check-btn:hover {
-  font-size: 21px;
+  transform: scale(1.11);
+  background: #b5b939;
+  color: rgb(5, 5, 5);
+  border: none;
   transition: ease-in-out 140ms;
 }
 </style>

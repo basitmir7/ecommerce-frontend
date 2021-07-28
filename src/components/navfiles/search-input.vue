@@ -19,7 +19,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 10px;
+  margin-top: -6px;
 }
 
 .search-input {
@@ -27,7 +27,7 @@ export default {
   height: 23px;
   margin: 0px;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 14px;
   border: 1px solid lightgray;
   display: flex;
   justify-content: space-between;

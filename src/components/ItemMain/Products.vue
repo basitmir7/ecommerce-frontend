@@ -57,7 +57,7 @@ export default {
   flex-wrap: wrap;
 }
 .col-3 {
-  width: 33.3333333%;
+  width: 30.333333%;
 }
 img {
   height: 220px;
@@ -73,21 +73,40 @@ img {
   font-weight: 400;
 }
 .product {
-  margin-top: 20px;
-  padding-left: 20px;
+  margin: 20px 21px 10px 10px;
+  padding: 20px 20px 20px 20px;
+  background: rgb(251, 255, 242);
+
+  box-shadow: 0 0 20px 0 rgba(56, 55, 55, 0.2),
+    0 5px 5px 0 rgba(66, 65, 65, 0.24);
 }
+.product:hover {
+  background: rgb(252, 250, 250);
+  transform: scale(1.13);
+  transition: ease-in-out 180ms;
+  opacity: 0.9;
+}
+
 .product_price span {
   font-size: 13px;
 }
 button {
-  border: 1px solid rgb(230, 248, 220);
-  background: linear-gradient(to right, #e2f3c2, #b0b43d);
-  color: black;
-  border-radius: 3px;
+  background: rgb(3, 3, 3);
+  color: rgb(255, 255, 255);
+  border-radius: 9px;
   cursor: pointer;
   outline: none;
   font-size: 14px;
   padding: 6px 13px;
+  border: 1px solid grey;
+}
+button:hover {
+  background: linear-gradient(to right, #cdf08c, #b2b635);
+  color: rgb(8, 8, 8);
+  transform: scale(1.11);
+  transition: ease-in-out 100ms;
+
+  border: none;
 }
 .product_button {
   margin: 10px;
@@ -96,11 +115,6 @@ button {
 .allProducts {
   margin-top: -120px;
   background: white;
-}
-
-button:hover {
-  font-size: 16px;
-  background: #b0b435;
-  transition: ease-in-out 100ms;
+  border-radius: 9px;
 }
 </style>

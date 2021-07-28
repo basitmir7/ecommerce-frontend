@@ -65,7 +65,7 @@ button {
 button:hover {
   background: #b0b435;
 
-  font-size: 28px;
+  transform: scale(1.1);
   opacity: 0.9;
   transition: ease-in-out 0.2s;
 }

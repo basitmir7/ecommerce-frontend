@@ -35,6 +35,11 @@
           <fa class="icons" :icon="['fas', 'shopping-basket']" />
         </router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="">
+          BLOG <fa class="icons" :icon="['fab', 'blogger']" />
+        </router-link>
+      </li>
       <li class="nav-item" v-if="isLoggedIn">
         <router-link to="/Login" @click.prevent="logoutUser">
           Log out
@@ -69,28 +74,38 @@ export default {
   margin-top: 5px;
   margin-bottom: 7px;
 }
-
-.navbar-collapse a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 5px;
-  overflow: hidden;
-  display: inline-flex;
-  color: #000000;
+.navbar-collapse ul li {
+  padding: 0px 9px 3px 9px;
+  font-size: 17px;
+  font-weight: bold;
 }
-.icons {
+.navbar-collapse li:hover {
+  transform: scale(1.2);
+  transition: 140ms;
+}
+
+.navbar-collapse ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-collapse ul :hover {
+  color: #b0b435;
+}
+
+/*.icons {
   color: #000000;
   font-size: 18px;
   margin-bottom: 2px;
   margin-left: 3px;
-  padding: 2px;
-}
-.nav-item :hover {
+  padding: 2.05px;
+}  */
+/*  .nav-item :hover {
   color: #b0b435;
 }
 .nav-item {
   font-family: "Oswald";
-  padding: 2px;
+  padding: 0.5px;
   font-weight: bold;
-}
+}  */
 </style>

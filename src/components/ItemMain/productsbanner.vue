@@ -1,6 +1,6 @@
 <template>
   <div class="headd">
-    <h2>Products</h2>
+    <h2>PRODUCTS</h2>
   </div>
 </template>
 <script>
@@ -17,6 +17,7 @@ export default {
 }
 h2 {
   font-family: "Oswald";
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
 }
 </style>

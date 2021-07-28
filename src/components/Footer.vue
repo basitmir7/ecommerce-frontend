@@ -211,9 +211,13 @@ footer {
 }
 .footer-distributed .footer-links a:hover {
   color: #b0b435;
+  transform: scale(1.1);
+  transition: 130ms;
 }
-.footer-icons .icons :hover {
+.footer-icons :hover {
   color: #b0b435;
+  transform: scale(1.12);
+  transition: 130ms;
 }
 
 @media (max-width: 880px) {
