@@ -3,7 +3,7 @@
     <div class="top">
       <router-link to="/" style="display: flex; justify-context: center">
         <h1 style="color:#b0b435">
-          {{ appName }}
+          KASHMIRFRESH {{ appName }}
           <fa :icon="['fab', 'atlassian']" style="color:#b0b435" />
         </h1>
       </router-link>
